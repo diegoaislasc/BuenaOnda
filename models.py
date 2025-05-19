@@ -22,7 +22,7 @@ class Artist(Base):
     instagram_handle: str = Column(String(30), unique=True)
 
     # Relationships
-    # albums = relationship("Album", back_populates="artist", cascade="all, delete-orphan")
+    albums = relationship("Album", back_populates="artist", cascade="all, delete-orphan")
     # events = relationship("Event", secondary="artist_event", back_populates="artists")
     # services = relationship("Service", secondary="artist_service", back_populates="artists")
 
@@ -41,7 +41,7 @@ class Album(Base):
 
     # Relationships
     artist = relationship("Artist", back_populates="albums")
-    #songs = relationship("Song", back_populates="album", cascade="all, delete-orphan")
+    songs = relationship("Song", back_populates="album", cascade="all, delete-orphan")
     #studios = relationship("Studio", secondary="album_studio", back_populates="albums")
 
     def __repr__(self):
@@ -59,8 +59,8 @@ class Song(Base):
 
     # Relationships
     album = relationship("Album", back_populates="songs")
-    producers = relationship("Producer", secondary="song_producer", back_populates="songs")
-    songwriters = relationship("Songwriter", secondary="songwriter_song", back_populates="songs")
+    #producers = relationship("Producer", secondary="song_producer", back_populates="songs")
+    #songwriters = relationship("Songwriter", secondary="songwriter_song", back_populates="songs")
 
     def __repr__(self):
         return f"<Song(title='{self.title}', album_id={self.album_id})>"
