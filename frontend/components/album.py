@@ -1,8 +1,9 @@
 import streamlit as st
 from typing import Dict, List, Any, Optional
-from frontend_completo.frontend.components.base import CRUDView
-from frontend_completo.frontend.utils.api import APIClient
+from frontend.components.base import CRUDView
+from frontend.utils.api import APIClient
 from datetime import date
+
 
 class AlbumView(CRUDView):
     """
