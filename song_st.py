@@ -1,7 +1,7 @@
 import streamlit as st
 from typing import Dict, List, Any, Optional
-from base import CRUDView
-from frontend.utils.api  import APIClient
+from base_st import CRUDView
+from api_st import APIClient
 
 class SongView(CRUDView):
     """

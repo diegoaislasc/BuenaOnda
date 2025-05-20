@@ -1,8 +1,8 @@
 import streamlit as st
-from utils.api import APIClient
-from components.artist import ArtistView
-from components.album import AlbumView
-from components.song import SongView
+from api_st import APIClient
+from artist_st import ArtistView
+from album_st import AlbumView
+from song_st import SongView
 
 class App:
     """

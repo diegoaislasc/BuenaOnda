@@ -1,26 +1,22 @@
 # streamlit run main_frontend.py
 
 import streamlit as st
-from frontend.utils.api import APIClient
-from components.artist import ArtistView
-from components.album import AlbumView
-from components.song import SongView
-import os
+from api_st import APIClient
+from artist_st import ArtistView
+from album_st import AlbumView
+from song_st import SongView
 
-"""def create_requirements_file():
-    # Crea el archivo requirements.txt para el frontend
-    requirements = [
-        "streamlit>=1.22.0",
-        "requests>=2.28.0",
-        "pandas>=1.5.0"
-    ]
-    
-    with open("requirements.txt", "w") as f:
-        f.write("\n".join(requirements))
-"""
 
 def main():
     """Función principal para ejecutar la aplicación Streamlit"""
+
+    # Configurar página
+    st.set_page_config(
+        page_title="Buena Onda Música",
+        page_icon="🎵",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
     
     # Inicializar la aplicación
     api_url = st.sidebar.text_input(
@@ -39,14 +35,7 @@ def main():
     except Exception as e:
         st.sidebar.error(f"Error de conexión: {str(e)}")
         st.sidebar.warning("Asegúrate de que el backend esté en ejecución")
-    
-    # Configurar página
-    st.set_page_config(
-        page_title="Buena Onda Música",
-        page_icon="🎵",
-        layout="wide",
-        initial_sidebar_state="expanded"
-    )
+
     
     # Renderizar sidebar
     with st.sidebar:
