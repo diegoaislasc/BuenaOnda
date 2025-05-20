@@ -1,6 +1,6 @@
 import streamlit as st
 from typing import Dict, List, Any, Optional
-from frontend.components.base import CRUDView
+from base import CRUDView
 from frontend.utils.api import APIClient
 from datetime import date
 

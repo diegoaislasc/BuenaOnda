@@ -1,5 +1,7 @@
+# streamlit run main_frontend.py
+
 import streamlit as st
-from utils.api import APIClient
+from frontend.utils.api import APIClient
 from components.artist import ArtistView
 from components.album import AlbumView
 from components.song import SongView

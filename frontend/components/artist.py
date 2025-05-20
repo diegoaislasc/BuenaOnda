@@ -1,7 +1,7 @@
 import streamlit as st
 from typing import Dict, List, Any, Optional
-from components.base import CRUDView
-from utils.api import APIClient
+from base import CRUDView
+from frontend.utils.api import APIClient
 
 class ArtistView(CRUDView):
     """
