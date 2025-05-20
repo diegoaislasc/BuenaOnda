@@ -1,3 +1,5 @@
+# uvicorn main:app --reload
+
 from fastapi import FastAPI, Depends, HTTPException
 import services, schemas
 from db import get_db
