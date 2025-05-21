@@ -1,4 +1,5 @@
-<img src="logo_buenaonda.jpg" alt="Logo Buena Onda Música" width="250"/>
+<img src="COLOR.jpg" alt="Logo Buena Onda Música" width="250"/>
+
 # Buena Onda Música
 
 **Sistema de Gestión para Disquera Independiente**  
