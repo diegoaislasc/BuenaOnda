@@ -1,10 +1,10 @@
----
-# 🎵 Buena Onda Música
+<img src="logo_buenaonda.jpg" alt="Logo Buena Onda Música" width="250"/>
+# Buena Onda Música
 
 **Sistema de Gestión para Disquera Independiente**  
 Proyecto CRUD Full Stack: FastAPI + PostgreSQL (Backend) & Streamlit (Frontend)
 
----
+
 
 ## Tabla de Contenidos
 
