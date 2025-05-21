@@ -13,7 +13,7 @@ def main():
     # Configurar página
     st.set_page_config(
         page_title="Buena Onda Música",
-        page_icon="🎵",
+        page_icon="COLOR.png",
         layout="wide",
         initial_sidebar_state="expanded"
     )
@@ -39,7 +39,8 @@ def main():
     
     # Renderizar sidebar
     with st.sidebar:
-        st.title("🎵 Buena Onda Música")
+        st.image("B Y N.png", width=150)
+        st.title("Buena Onda Música")
         st.markdown("---")
         
         # Opciones de navegación
@@ -65,8 +66,10 @@ def main():
         song_view = SongView(api_client)
         song_view.render()
 
+
 def render_home(api_client):
     """Renderiza la página de inicio"""
+    # st.image("B Y N.jpg", width=300)
     st.title("Bienvenido a Buena Onda Música")
     
     st.markdown("""
